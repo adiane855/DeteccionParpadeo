@@ -16,10 +16,9 @@ Este proyecto permite controlar el ratón de tu computadora (clic izquierdo, cli
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [URL_DE_TU_REPOSITORIO]
+    git clone https://github.com/adiane855/DeteccionParpadeo.git
     cd nombre-del-repositorio
     ```
-    *(Reemplaza `[URL_DE_TU_REPOSITORIO]` con la URL de tu repositorio GitHub que crearemos más adelante)*
 
 2.  **Crear y activar un entorno virtual (recomendado):**
     ```bash
@@ -69,5 +68,6 @@ Este proyecto permite controlar el ratón de tu computadora (clic izquierdo, cli
 ## Notas Importantes
 - La precisión de la detección de parpadeo puede variar según la iluminación y la configuración de tu cámara. Puedes ajustar `EYE_AR_THRESH` y `EYE_AR_CONSEC_FRAMES` en el código para mejorar la sensibilidad.
 - Este proyecto demuestra el control del ratón; un sistema completo de control ocular requeriría también movimiento del cursor (ej. vía seguimiento de mirada).
+- El desarrollo de este proyecto fue en Linux (Ubuntu)
 
 ---
