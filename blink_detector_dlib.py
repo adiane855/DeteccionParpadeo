@@ -107,7 +107,6 @@ while True:
             # Priorizar doble clic si ambos ojos parpadean simultáneamente
             if left_COUNTER >= EYE_AR_CONSEC_FRAMES and right_COUNTER >= EYE_AR_CONSEC_FRAMES:
                 TOTAL_BLINKS += 1
-                # DESCOMENTADO PARA CLIC REAL
                 pyautogui.doubleClick(interval=0.1)
                 current_blink_type = "Doble Clic"
                 print("¡Doble Clic detectado y realizado!")
@@ -120,7 +119,7 @@ while True:
             # Si no es doble clic, verificar parpadeo del ojo izquierdo
             elif left_COUNTER >= EYE_AR_CONSEC_FRAMES:
                 TOTAL_BLINKS += 1
-                pyautogui.leftClick()  # DESCOMENTADO PARA CLIC REAL
+                pyautogui.leftClick()
                 current_blink_type = "Clic Izquierdo"
                 print("¡Clic Izquierdo detectado y realizado!")
                 current_on_screen_message = "!!! CLIC IZQUIERDO !!!"  # Mensaje para mostrar
@@ -131,7 +130,7 @@ while True:
             # Si no es doble ni izquierdo, verificar parpadeo del ojo derecho
             elif right_COUNTER >= EYE_AR_CONSEC_FRAMES:
                 TOTAL_BLINKS += 1
-                pyautogui.rightClick()  # DESCOMENTADO PARA CLIC REAL
+                pyautogui.rightClick()
                 current_blink_type = "Clic Derecho"
                 print("¡Clic Derecho detectado y realizado!")
                 current_on_screen_message = "!!! CLIC DERECHO !!!"  # Mensaje para mostrar
