@@ -21,7 +21,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 1.  **Clonar el Repositorio:**
     Abre tu terminal y clona el repositorio de GitHub:
     ```bash
-    git clone [https://github.com/adiane855/DeteccionParpadeo.git](https://github.com/adiane855/DeteccionParpadeo.git)
+    git clone https://github.com/adiane855/DeteccionParpadeo.git
     cd DeteccionParpadeo
     ```
     (Asegúrate de reemplazar `DeteccionParpadeo` por el nombre real de tu carpeta si es diferente).
@@ -39,7 +39,6 @@ Sigue estos pasos para poner en marcha el proyecto:
     ```bash
     pip install -r requirements.txt
     ```
-    *(Si no tienes un `requirements.txt`, instala individualmente: `pip install dlib opencv-contrib-python imutils scipy pyautogui`)*
 
 4.  **Instalar Dependencias del Sistema (para Ubuntu/Debian):**
     Para que `pyautogui` pueda controlar el ratón en entornos Linux (como Ubuntu/Debian), necesitas algunas librerías adicionales del sistema.
@@ -52,7 +51,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 5.  **Descargar el Predictor de Forma Facial de Dlib:**
     Este proyecto requiere el archivo de modelo `shape_predictor_68_face_landmarks.dat` para la detección de puntos de referencia faciales.
     Puedes descargarlo desde este enlace:
-    [http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
+    http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
     * Descomprime el archivo `.bz2` (puedes usar `bunzip2 shape_predictor_68_face_landmarks.dat.bz2` en Linux).
     * Coloca el archivo `shape_predictor_68_face_landmarks.dat` **directamente en la misma carpeta que `blink_detector_dlib.py`**.
 
